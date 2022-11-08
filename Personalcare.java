@@ -2,7 +2,7 @@
 /**
  * Abstract class PersonalCare 
  *
- * @author Tasya
+ * @author Tasya Nadila, Fatiya Quzza
  * @version 0/11/2022
  */
 public abstract class PersonalCare
@@ -13,7 +13,7 @@ public abstract class PersonalCare
     private int stokBarang;
 
     /**
-     * Constructor for objects of Abstract class Personalcare tanpa parameter
+     * Constructor for objects of Abstract class PersonalCare tanpa parameter
      */
     public PersonalCare(){
 
