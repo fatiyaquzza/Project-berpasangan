@@ -3,7 +3,7 @@
  * Abstract class PersonalCare 
  *
  * @author Tasya Nadila, Fatiya Quzza
- * @version 0/11/2022
+ * @version 09/11/2022
  */
 public abstract class PersonalCare
 {
@@ -19,7 +19,7 @@ public abstract class PersonalCare
 
     }
 
-  /**
+     /**
      * Constructor for objects of Abstract Class Personalcare dengan parameter
      */
     public PersonalCare(double harga,  String nama, int stokBarang){
