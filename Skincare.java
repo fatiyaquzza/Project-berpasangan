@@ -9,12 +9,13 @@ public class Skincare extends PersonalCare {
     
     private int banyakSC[] = {0, 10, 10, 10, 10, 10};
     private double totalHargaSC = 0;
+    
     public Skincare(){
 
     }
 
-    public Skincare(double harga, String nama, int stokBarang){
-        super(harga,  nama, stokBarang);
+    public Skincare(double harga, String nama){
+        
     }
 
     public double getTotalHarga(double harga, int jumlah){
