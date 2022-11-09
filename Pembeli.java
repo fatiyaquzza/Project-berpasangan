@@ -39,7 +39,10 @@ public class Pembeli {
     }
 
     public void invoice(){
+        System.out.println("================================================");
+        System.out.println("Bill atas nama: " + getNama());
         System.out.println("Total Harga: Rp." + getTotalBayar());
         System.out.println("Jumlah Barang: " + getTotalBarang());
+        System.out.println("================================================");
     }
 }
