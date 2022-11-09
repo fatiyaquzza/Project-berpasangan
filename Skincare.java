@@ -22,7 +22,7 @@ public class Skincare extends PersonalCare {
      * 
      */
     public Skincare(double harga, String nama){
-
+        super(harga, nama);
     }
 
     /**
