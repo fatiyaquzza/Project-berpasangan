@@ -19,7 +19,7 @@ public class HairCare extends PersonalCare {
 
     /**
      * Constructor for objects of class HairCare dengan parameter
-     * harga, nama, dan stokBarang
+     * harga dan nama
      * 
      */
     public HairCare(double harga, String nama){
@@ -76,6 +76,7 @@ public class HairCare extends PersonalCare {
      * @param p
      * @return harga
      */
+    @Override
     public double hargaProduk(int p){
         double harga = 0;
         double pilih[] = {0, 21000, 56000, 12000, 37000, 34000};

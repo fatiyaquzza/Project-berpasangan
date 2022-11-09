@@ -18,7 +18,7 @@ public class BodyCare extends PersonalCare {
 
     /**
      * Constructor for objects of BodyCare dengan parameter
-     * berupa harga, nama, dan stokBarang
+     * berupa harga dan nama
      * 
      */
     public BodyCare(double harga, String nama){
