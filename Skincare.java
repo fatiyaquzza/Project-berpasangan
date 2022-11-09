@@ -10,33 +10,62 @@ public class Skincare extends PersonalCare {
     private int banyakSC[] = {0, 10, 10, 10, 10, 10};
     private double totalHargaSC = 0;
     
+    /**
+    * Constructor for objects of class Skincare tanpa parameter
+    */
     public Skincare(){
 
     }
 
+    /**
+     * Constructor for objects of class Skincare dengan parameter
+     * harga dan nama
+     * 
+     */
     public Skincare(double harga, String nama){
-        
+
     }
 
+    /**
+     * Method Acessor/ method getTotalHarga untuk
+     * mengembalikan TotalHarga sementara
+     * 
+     * @return sementara
+     */
     public double getTotalHarga(double harga, int jumlah){
         double sementara = harga * jumlah;
         setTotalHargaSC(sementara);
         return sementara;
     }
-
+    /**
+     * Method setTotalHargaSC untuk mengatur/mengubah TotalHargaSC
+     * 
+     * @param totalHargaSC sementara
+     */
     public void setTotalHargaSC(double sementara){
         this.totalHargaSC = sementara ;
     }
 
+    /**
+     * Method getTotalHargaSC untuk mengembalikan TotalHargaSC 
+     * 
+     * @return totalHargaSC
+     */
     public double getTotalHargaSC(){
         return this.totalHargaSC;
     }
 
+    /**
+     * method getTotalSC untuk mengembalikan 
+     * total/jumlah SC
+     * 
+     * @return jumlah
+     */
     public int getTotalSC(){
         return super.getJumlah();
     }
 
-    public void barangSC(int pilihan){
+    /*public void barangSC(int pilihan){
         banyakSC[pilihan] -= super.getJumlah();
     }
     
@@ -46,7 +75,7 @@ public class Skincare extends PersonalCare {
         } else{
             return false;
         }
-    }
+    }*/
 
     public int hargaSkincare(int p){
         int harga = 0;
