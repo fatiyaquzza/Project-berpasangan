@@ -31,6 +31,7 @@ public class BodyCare extends PersonalCare {
      * 
      * @return sementara
      */
+    @Override
     public double getTotalHarga(double harga, int jumlah){
         double sementara = harga * jumlah;
         setTotalHargaBC(sementara);
@@ -71,9 +72,10 @@ public class BodyCare extends PersonalCare {
      * @param p
      * @return harga
      */
-    public int hargaBodyCare(int p){
-        int harga = 0;
-        int pilih[] = {0, 28000, 17000, 29000, 31000, 38000};
+    @Override
+    public double hargaProduk(int p){
+        double harga = 0;
+        double pilih[] = {0, 28000, 17000, 29000, 31000, 38000};
 
         switch(p){
             case 1 :
