@@ -12,14 +12,14 @@ public abstract class PersonalCare
     private String nama;
 
     /**
-     * Constructor for objects of Abstract class PersonalCare tanpa parameter
+     * Constructor for Abstract class PersonalCare tanpa parameter
      */
     public PersonalCare(){
 
     }
 
      /**
-     * Constructor for objects of Abstract Class Personalcare dengan parameter
+     * Constructor for Abstract Class Personalcare dengan parameter
      */
     public PersonalCare(double harga,  String nama){
         this.harga = harga;
