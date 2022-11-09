@@ -7,7 +7,6 @@
  */
 public class BodyCare extends PersonalCare {
     
-    private int banyakBC[] = {0, 10, 10, 10, 10, 10};
     private double totalHargaBC = 0;
 
     /**
@@ -65,18 +64,13 @@ public class BodyCare extends PersonalCare {
         return super.getJumlah();
     }
 
-    public void barangBC(int pilihan){
-        banyakBC[pilihan] -= super.getJumlah();
-    }
-    
-    public boolean stokBC(int pilihan){
-        if (banyakBC[pilihan] > 0){
-            return true;
-        } else{
-            return false;
-        }
-    }
-
+    /**
+     * Method untuk menentukan hargaBodyCare berdasarkan
+     * pilihan produk pembeli
+     * 
+     * @param p
+     * @return harga
+     */
     public int hargaBodyCare(int p){
         int harga = 0;
         int pilih[] = {0, 28000, 17000, 29000, 31000, 38000};
