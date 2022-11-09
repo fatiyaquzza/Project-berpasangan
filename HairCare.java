@@ -8,7 +8,6 @@
 
 public class HairCare extends PersonalCare {
     
-    private int banyakHC[] = {0, 10, 10, 10, 10, 10};
     private double totalHargaHC = 0;
 
     /**
@@ -69,19 +68,13 @@ public class HairCare extends PersonalCare {
         return super.getJumlah();
     }
 
-
-    public void barangHC(int pilihan){
-        banyakHC[pilihan] -= super.getJumlah();
-    }
-    
-    public boolean stokHC(int pilihan){
-        if (banyakHC[pilihan] > 0){
-            return true;
-        } else{
-            return false;
-        }
-    }
-
+    /**
+     * Method untuk menentukan hargaHairCare berdasarkan
+     * pilihan produk pembeli
+     * 
+     * @param p
+     * @return harga
+     */
     public int hargaHairCare(int p){
         int harga = 0;
         int pilih[] = {0, 21000, 56000, 12000, 37000, 34000};
