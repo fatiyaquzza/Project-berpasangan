@@ -126,6 +126,20 @@ public class Main {
             person = new Pembeli(nama, tampung_harga, tampung_barang);
             person.invoice();
 
+            System.out.print("Uang Anda: ");
+            double uang = inp.nextDouble();
+            // double hasil;
+            if(tampung_harga > uang){
+                System.out.println("\nMaaf saldo anda tidak cukup, pembelian akan dibatalkan");
+            } else if(tampung_harga == uang){
+                System.out.println("\nTerimakasih telah berbelanja");
+            } else if(tampung_harga < uang){
+                double hasil;
+                hasil = uang - tampung_harga;
+                System.out.println("\nUang kembalian anda: " + hasil);
+                System.out.println("\nTerimakasih telah berbelanja");
+            }
+
             break;
         }
         else{
