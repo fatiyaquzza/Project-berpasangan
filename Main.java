@@ -59,7 +59,7 @@ public class Main {
                 System.out.println("Jumlah yang diinginkan :");
                 int jumlah = inp.nextInt();
                 skincare.setJumlah(jumlah);
-                skincare.setHarga(skincare.hargaSkincare(sc));
+                skincare.setHarga(skincare.hargaProduk(sc));
                 skincare.getTotalHarga(skincare.getHarga(), jumlah);
             } else{
                 System.out.println("Pilihan Anda tidak tersedia");
