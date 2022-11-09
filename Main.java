@@ -52,6 +52,7 @@ public class Main {
             System.out.println("3. Serum (Rp.40000,00)");
             System.out.println("4. Toner (Rp.35000,00)");
             System.out.println("5. Face Wash(Rp.15000,00)");
+            System.out.println("6. Kembali ke Menu Utama");
 
             System.out.println("Pilihan Anda: ");
             int sc = inp.nextInt();
@@ -62,8 +63,12 @@ public class Main {
                 skincare.setHarga(skincare.hargaProduk(sc));
                 skincare.getTotalHarga(skincare.getHarga(), jumlah);
             } else{
-                System.out.println("Pilihan Anda tidak tersedia");
-                System.out.println("Anda akan kembali ke menu utama");
+                if(sc == 6){
+                    System.out.println("Anda akan kembali ke menu utama");
+                }else{
+                    System.out.println("Pilihan Anda tidak tersedia");
+                    System.out.println("Anda akan kembali ke menu utama");
+                }
             }
             
 
@@ -74,6 +79,7 @@ public class Main {
             System.out.println("3. Hair Vitamin (Rp.12000,00)");
             System.out.println("4. Hair Mask (Rp.37000,00)");
             System.out.println("5. Hair Mist(Rp.34000,00)");
+            System.out.println("6. Kembali ke Menu Utama");
 
             System.out.println("Pilihan Anda: ");
             int hc = inp.nextInt();
@@ -85,8 +91,12 @@ public class Main {
                 haircare.setHarga(haircare.hargaProduk(hc));
                 haircare.getTotalHarga(haircare.getHarga(), jumlah);
             }else{
-                System.out.println("Pilihan Anda tidak tersedia");
-                System.out.println("Anda akan kembali ke menu utama");
+                if(hc == 6){
+                    System.out.println("Anda akan kembali ke menu utama");
+                }else{
+                    System.out.println("Pilihan Anda tidak tersedia");
+                    System.out.println("Anda akan kembali ke menu utama");
+                }
             }
             
 
@@ -97,6 +107,7 @@ public class Main {
             System.out.println("3. Body Scrub (Rp.29000,00)");
             System.out.println("4. Body Serum (Rp.31000,00)");
             System.out.println("5. Parfum (Rp.38000,00)");
+            System.out.println("6. Kembali ke Menu Utama");
 
             System.out.println("Pilihan Anda: ");
             int bc = inp.nextInt();
@@ -108,8 +119,12 @@ public class Main {
                 bodycare.setHarga(bodycare.hargaProduk(bc));
                 bodycare.getTotalHarga(bodycare.getHarga(), jumlah);
             }else{
-                System.out.println("Pilihan Anda tidak tersedia");
-                System.out.println("Anda akan kembali ke menu utama");
+                if(bc == 6){
+                    System.out.println("Anda akan kembali ke menu utama");
+                }else{
+                    System.out.println("Pilihan Anda tidak tersedia");
+                    System.out.println("Anda akan kembali ke menu utama");
+                }
             }
  
 
@@ -117,6 +132,7 @@ public class Main {
             System.out.println("terimakasih");
             ulang = false;
             break;
+            
         } else if (pilih == 5){
             System.out.println("Anda telah selesai berbelanja");
             int tampung_barang = skincare.getTotalSC() + haircare.getTotalHC() + bodycare.getTotalBC() ;
