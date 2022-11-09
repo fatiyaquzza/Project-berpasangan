@@ -82,7 +82,7 @@ public class Main {
                 System.out.println("Jumlah yang diinginkan :");
                 int jumlah = inp.nextInt();
                 haircare.setJumlah(jumlah);
-                haircare.setHarga(haircare.hargaHairCare(hc));
+                haircare.setHarga(haircare.hargaProduk(hc));
                 haircare.getTotalHarga(haircare.getHarga(), jumlah);
             }else{
                 System.out.println("Pilihan Anda tidak tersedia");
@@ -105,7 +105,7 @@ public class Main {
                 System.out.println("Jumlah yang diinginkan :");
                 int jumlah = inp.nextInt();
                 bodycare.setJumlah(jumlah);
-                bodycare.setHarga(bodycare.hargaBodyCare(bc));
+                bodycare.setHarga(bodycare.hargaProduk(bc));
                 bodycare.getTotalHarga(bodycare.getHarga(), jumlah);
             }else{
                 System.out.println("Pilihan Anda tidak tersedia");
