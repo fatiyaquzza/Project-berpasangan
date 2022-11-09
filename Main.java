@@ -37,7 +37,7 @@ public class Main {
         System.out.println("Selamat Datang di toko penjualan personalcare");
         System.out.println("Silahkan pilih barang-barang yang ingin dibeli");
 
-        System.out.println("Nama anda: ");
+        System.out.print("Nama anda: ");
         String nama = inp.nextLine();
 
         boolean ulang = true;
