@@ -22,16 +22,27 @@ public class BodyCare extends PersonalCare {
      * berupa harga, nama, dan stokBarang
      * 
      */
-    public BodyCare(double harga, String nama, int stokBarang){
-        super(harga, nama, stokBarang);
+    public BodyCare(double harga, String nama){
+     
     }
 
+    /**
+     * Method getTotalHarga untuk mengembalikan TotalHarga sementara
+     * 
+     * 
+     * @return sementara
+     */
     public double getTotalHarga(double harga, int jumlah){
         double sementara = harga * jumlah;
         setTotalHargaBC(sementara);
         return sementara;
     }
 
+    /**
+     * Method setTotalHargaBC untuk mengatur/mengubah TotalHargaBC
+     * 
+     * @param totalHargaBC sementara
+     */
     public void setTotalHargaBC(double sementara){
         this.totalHargaBC = sementara ;
     }
@@ -45,6 +56,11 @@ public class BodyCare extends PersonalCare {
         return this.totalHargaBC;
     }
 
+    /**
+     * Method getTotalBC untuk mengembalikan TotalBC
+     * 
+     * @return jumlah
+     */
     public int getTotalBC(){
         return super.getJumlah();
     }
