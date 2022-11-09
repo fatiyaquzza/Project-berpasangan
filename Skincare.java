@@ -7,7 +7,6 @@
  */
 public class Skincare extends PersonalCare {
     
-    private int banyakSC[] = {0, 10, 10, 10, 10, 10};
     private double totalHargaSC = 0;
     
     /**
@@ -64,18 +63,6 @@ public class Skincare extends PersonalCare {
     public int getTotalSC(){
         return super.getJumlah();
     }
-
-    /*public void barangSC(int pilihan){
-        banyakSC[pilihan] -= super.getJumlah();
-    }
-    
-    public boolean stokSC(int pilihan){
-        if (banyakSC[pilihan] > 0){
-            return true;
-        } else{
-            return false;
-        }
-    }*/
 
     public int hargaSkincare(int p){
         int harga = 0;
