@@ -31,6 +31,7 @@ public class Skincare extends PersonalCare {
      * 
      * @return sementara
      */
+    @Override
     public double getTotalHarga(double harga, int jumlah){
         double sementara = harga * jumlah;
         setTotalHargaSC(sementara);
@@ -64,9 +65,17 @@ public class Skincare extends PersonalCare {
         return super.getJumlah();
     }
 
-    public int hargaSkincare(int p){
-        int harga = 0;
-        int pilih[] = {0, 40000, 23000, 40000, 35000, 15000};
+     /**
+     * Method untuk menentukan hargaProduk Skincare berdasarkan
+     * pilihan produk pembeli
+     * 
+     * @param p
+     * @return harga
+     */
+    @Override
+    public double hargaProduk(int p){
+        double harga = 0;
+        double pilih[] = {0, 40000, 23000, 40000, 35000, 15000};
 
         switch(p){
             case 1 :

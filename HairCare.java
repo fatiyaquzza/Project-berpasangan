@@ -32,6 +32,7 @@ public class HairCare extends PersonalCare {
      * 
      * @return sementara
      */
+    @Override
     public double getTotalHarga(double harga, int jumlah){
         double sementara = harga * jumlah;
         setTotalHargaHC(sementara);
@@ -75,9 +76,9 @@ public class HairCare extends PersonalCare {
      * @param p
      * @return harga
      */
-    public int hargaHairCare(int p){
-        int harga = 0;
-        int pilih[] = {0, 21000, 56000, 12000, 37000, 34000};
+    public double hargaProduk(int p){
+        double harga = 0;
+        double pilih[] = {0, 21000, 56000, 12000, 37000, 34000};
 
         switch(p){
             case 1 :
