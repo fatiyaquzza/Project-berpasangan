@@ -10,7 +10,6 @@ public abstract class PersonalCare
     private double harga;
     private int jumlah;
     private String nama;
-    private int stokBarang;
 
     /**
      * Constructor for objects of Abstract class PersonalCare tanpa parameter
@@ -22,10 +21,10 @@ public abstract class PersonalCare
      /**
      * Constructor for objects of Abstract Class Personalcare dengan parameter
      */
-    public PersonalCare(double harga,  String nama, int stokBarang){
+    public PersonalCare(double harga,  String nama){
         this.harga = harga;
         this.nama = nama;
-        this.stokBarang = stokBarang;
+
     }
   
     /**
@@ -37,6 +36,10 @@ public abstract class PersonalCare
         return harga;
     }
 
+    /**
+     * Method untuk mengatur/mengubah harga
+     * @param harga
+     */
     public void setHarga(double harga) {
         this.harga = harga;
     }
@@ -50,27 +53,37 @@ public abstract class PersonalCare
         return jumlah;
     }
 
+    /**
+     * Method setJumlah untuk mengatur/mengubah jumlah
+     * @param jumlah
+     */
     public void setJumlah(int jumlah) {
         this.jumlah = jumlah;
     }
 
-   
+   /**
+    * Method getNama untuk mengembalikan nama
+    * @return nama
+    */
     public String getNama() {
         return nama;
     }
 
+    /**
+     * Method setNama untuk mengatur/mengubah nama
+     * @param nama
+     */
     public void setNama(String nama) {
         this.nama = nama;
     }
 
-    public int getStokBarang() {
-        return stokBarang;
-    }
-
-    public void setStokBarang(int stokBarang) {
-        this.stokBarang = stokBarang;
-    }
-
+    /**
+     * Method abstract getTotalHarga yang nantinya akan di override di tiap subclassnya
+     * Method ini akan mengembalikan totalHarga dari masing-masing subclassnya
+     * @param harga
+     * @param jumlah
+     * @return
+     */
     abstract double getTotalHarga(double harga, int jumlah);
     
 }
