@@ -85,5 +85,13 @@ public abstract class PersonalCare
      * @return
      */
     abstract double getTotalHarga(double harga, int jumlah);
+
+    /**
+     * Method abstract hargaProduk yang akan di override di tiap sub classnya
+     * akan mengembalikan harga dari masing-masing produk
+     * @param p
+     * @return
+     */
+    abstract double hargaProduk(int p);
     
 }
