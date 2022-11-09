@@ -66,10 +66,6 @@ public class Main {
                 System.out.println("Anda akan kembali ke menu utama");
             }
             
-            // skincare.setHarga(skincare.hargaSkincare(sc));
-            // skincare.getTotalHarga(skincare.getHarga(), jumlah);
-            //person.setTotalBayar(skincare.getTotalHargaSC());
-            //skincare.getTotalSc(jumlah);
 
         } else if(pilih == 2){
             System.out.println("\n\nDaftar Haircare:");
@@ -92,7 +88,6 @@ public class Main {
                 System.out.println("Pilihan Anda tidak tersedia");
                 System.out.println("Anda akan kembali ke menu utama");
             }
-            //person.setTotalBayar(haircare.getTotalHargaHC());
             
 
         } else if(pilih == 3){
@@ -128,8 +123,6 @@ public class Main {
 
             double tampung_harga = skincare.getTotalHargaSC() + haircare.getTotalHargaHC() + bodycare.getTotalHargaBC();
 
-            // String s = Double.toString(tampung_harga);
-
             person = new Pembeli(nama, tampung_harga, tampung_barang);
             person.invoice();
 
@@ -140,8 +133,6 @@ public class Main {
         }
 
         }while(ulang);
-
-
 
     }
 }
