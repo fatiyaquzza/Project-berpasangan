@@ -23,24 +23,48 @@ public class HairCare extends PersonalCare {
      * harga, nama, dan stokBarang
      * 
      */
-    public HairCare(double harga, String nama, int stokBarang){
-        super(harga,  nama, stokBarang);
+    public HairCare(double harga, String nama){
+        
     }
 
+    /**
+     * Method Acessor/ method getTotalHarga untuk
+     * mengembalikan TotalHarga sementara
+     * 
+     * @return sementara
+     */
     public double getTotalHarga(double harga, int jumlah){
         double sementara = harga * jumlah;
         setTotalHargaHC(sementara);
         return sementara;
     }
 
+     /**
+     * Method setTotalHargaHC untuk mengatur/mengubah TotalHargaHC
+     * 
+     * @param totalHargaHC sementara
+     */
     public void setTotalHargaHC(double sementara){
         this.totalHargaHC = sementara ;
     }
 
+    /**
+     * method getTotalHargaHC untuk mengembalikan 
+     * totalHarga haircare
+     * 
+     * @return totalHargaHC
+     */
     public double getTotalHargaHC(){
         return this.totalHargaHC;
     }
 
+    /**
+     * method acessor/ getTotalHC untuk 
+     * mengembalikan TotalHC
+     * 
+     * 
+     * @return jumlah
+     */
     public int getTotalHC(){
         return super.getJumlah();
     }
