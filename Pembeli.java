@@ -81,10 +81,13 @@ public class Pembeli {
 
     /**
      * Method untuk tampilan pada bill
-     * yang akan menampilkan totalBayar dan totalBarang
+     * yang akan menampilkan bill atas nama pembeli, totalBayar dan totalBarang
      */
     public void invoice(){
+        System.out.println("================================================");
+        System.out.println("Bill atas nama: " + getNama());
         System.out.println("Total Harga: Rp." + getTotalBayar());
         System.out.println("Jumlah Barang: " + getTotalBarang());
+        System.out.println("================================================");
     }
 }
